@@ -1,0 +1,52 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  button.mat-raised-button
+  {
+    background-color: green;
+    color: #fff;
+  }
+
+  // button
+  // {
+  //  i
+  //   {
+  //     width: 20px;
+  //     height: 20px;
+  //     text-align: center;
+  //     line-height: 18px;
+  //     border-radius: 50%;
+  //     border: 1px solid #fff;
+  //     background-color: #fff;
+  //    margin-right: 2px;
+  //   }
+  //   i.fa-plus
+  //   {
+  //     color: green;
+
+  //   }
+  //   i.fa-minus
+  //   {
+  //     color: red;
+  //   }
+  // }
+
+ 
+  //table
+  table {
+    width: 100%;
+  }
+  
+  .mat-mdc-form-field , mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  // td, th {
+  //   width: 25%;
+  // }
+  mat-label
+  {
+    font-size: 18px
+  }
+ 

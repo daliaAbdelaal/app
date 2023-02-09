@@ -1,0 +1,38 @@
+<div >
+    <h1 mat-dialog-title class=" pb-2">Add Employee</h1>
+    <form [formGroup]="employeeForm" >
+        <div mat-dialog-content>
+            <mat-form-field appearance="outline">
+                <mat-label>name</mat-label>
+                <input formControlName="empName" matInput placeholder="Type name">
+                <span *ngIf="employeeForm.controls.empName.invalid&&employeeForm.controls.empName.touched" class="text-danger">name is invalid</span>
+            </mat-form-field>
+    
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input formControlName="empEmail" matInput placeholder="Type Email">
+                <span *ngIf="employeeForm.controls.empEmail.invalid&&employeeForm.controls.empEmail.touched" class="text-danger">email is invalid</span>
+
+            </mat-form-field>
+    
+            <mat-form-field appearance="outline">
+                <mat-label>Address</mat-label>
+                <textarea formControlName="empAddress" matInput placeholder="Type Address"></textarea>
+                <span *ngIf="employeeForm.controls.empAddress.invalid&&employeeForm.controls.empAddress.touched" class="text-danger">address is invalid</span>
+            </mat-form-field>
+
+    
+            <mat-form-field appearance="outline">
+                <mat-label>Phone</mat-label>
+                <input formControlName="empPhone" matInput placeholder="Type phone">
+                <span *ngIf="employeeForm.controls.empPhone.invalid&&employeeForm.controls.empPhone.touched" class="text-danger">phone is invalid</span>
+
+            </mat-form-field>
+        </div>
+    </form>
+
+    <div mat-dialog-actions align="end">
+        <button  mat-button mat-dialog-close>Cancel</button>
+        <button  mat-raised-button type="submit" (click)="addEmployee()" [disabled]='employeeForm.invalid'>Add</button>
+    </div>
+</div>
